@@ -1,0 +1,69 @@
+
+        <!DOCTYPE html>
+        <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <title>Rapport de Sécurité Réseau</title>
+            <style>
+                body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f0f2f5; padding: 40px; color: #333; }
+                .container { max-width: 1000px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: auto; }
+                h1 { color: #1a365d; border-bottom: 3px solid #3182ce; padding-bottom: 15px; }
+                .meta { color: #718096; margin-bottom: 30px; font-style: italic; }
+                table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                th { background-color: #3182ce; color: white; padding: 12px; text-align: left; }
+                td { padding: 12px; border-bottom: 1px solid #e2e8f0; }
+                tr:hover { background-color: #f7fafc; }
+                .badge { padding: 6px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; text-transform: uppercase; }
+                .danger { background-color: #fed7d7; color: #c53030; }
+                .warning { background-color: #feebc8; color: #c05621; }
+                .success { background-color: #c6f6d5; color: #2f855a; }
+                code { background: #edf2f7; padding: 2px 5px; border-radius: 4px; font-family: monospace; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>🛡️ Rapport d'Analyse des Menaces</h1>
+                <p class="meta">Généré le 08/01/2026 à 11:07 | Analyse des flux IP</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IP Source</th>
+                            <th>Type d'Attaque</th>
+                            <th>Gravité</th>
+                            <th>Détails (Volume / Cibles)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                <tr>
+                    <td><code>ns1.lan.rt.domain</code></td>
+                    <td>Balayage de Ports (Scanning)</td>
+                    <td><span class="badge warning">warning</span></td>
+                    <td>0 octets / 61 cible(s)</td>
+                </tr>
+                
+                <tr>
+                    <td><code>mauves.univ-st-etienne.fr.https</code></td>
+                    <td>Tentative de DDoS</td>
+                    <td><span class="badge danger">danger</span></td>
+                    <td>2321291 octets / 7 cible(s)</td>
+                </tr>
+                
+                <tr>
+                    <td><code>www.aggloroanne.fr.https</code></td>
+                    <td>Tentative de DDoS</td>
+                    <td><span class="badge danger">danger</span></td>
+                    <td>2902211 octets / 6 cible(s)</td>
+                </tr>
+                
+                    </tbody>
+                </table>
+                <div style='margin-top:20px;'><h3>Top sources par volume</h3><img src='top_sources_volume.png' alt='Top volumes' style='max-width:100%'></div><div style='margin-top:12px;'><h3>Top scanneurs par cibles uniques</h3><img src='top_scanners_count.png' alt='Top scanneurs' style='max-width:100%'></div>
+                <p style="margin-top: 30px; font-size: 0.8em; color: #a0aec0; text-align: center;">
+                    Fin du rapport de sécurité réseau automatisé.
+                </p>
+            </div>
+        </body>
+        </html>
+        
